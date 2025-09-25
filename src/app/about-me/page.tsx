@@ -5,7 +5,7 @@ export default function AboutMe() {
     <div>
       <h1 className="font-sans">About me</h1>
       <Image
-        src="/FullSizeRender.jpg"
+        src="/images/Iceland1-2000.webp"
         alt="Kasia's photo"
         width={500}
         height={500}

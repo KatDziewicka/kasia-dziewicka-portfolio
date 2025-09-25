@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## About the project
+
+This project is as much a display of my software engineering skills as any other one included in the protfolio. Despite being a small site, I decided to employ some strategies that challenged me to learn or use different tools that I am used to in my everyday job.
+
+# Next.js and Vercel
+
+I decided to use Next.js and Vercel as they are trendy in the community and I want to learn to use them. The server-side rendering that Next.js offers out of the box is perfect for improving the SEO of the site, making my portfolio discovereable.
+
+My plan is to introduce micro frontends to this site. This would normally be much more useful in a larger application, but it would give me an opportunity to familiarize myself with this architecture pattern.
+
+# Image serving
+
+My pictures come from an iphone. Images are processed via a script as part of the build to convert HEIC to modern image extensions optimised for the web: WebP and AVIF.
