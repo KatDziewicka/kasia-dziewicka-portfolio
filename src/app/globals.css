@@ -1,16 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: linear-gradient(to right, #fef9c3, #ffffff);
+  --foreground: #0a0a0a;
 }
-
-/* @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -25,24 +18,26 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @keyframes typewriter {
-  from { width: 0 }
-  to { width: 22ch }
+  from {
+    width: 0;
+  }
+  to {
+    width: 52ch;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .typewriter {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 4px solid white; /* Cursor */
-  width: 22ch;
-  animation: typewriter 4s steps(22) 1s 1 normal both,
-             blink 0.7s step-end infinite;
+  border-right: 4px solid var(--foreground); /* Cursor */
+  animation:
+    typewriter 4s steps(22) 1s 1 normal both,
+    blink 0.7s step-end infinite;
 }
